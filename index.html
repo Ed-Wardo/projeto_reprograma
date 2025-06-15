@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPROGRAMA - Inclusão Digital e Tecnológica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>REPROGRAMA</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">Home</a></li>
+                    <li><a href="#" onclick="showSection('cursos')">Cursos</a></li>
+                    <li><a href="#" onclick="showSection('forum')">Fórum</a></li>
+                    <li><a href="#" onclick="showSection('vagas')">Vagas</a></li>
+                    <li><a href="#" onclick="showSection('sobre')">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <h2>Reprogramando o mercado de trabalho através da inclusão digital e tecnológica</h2>
+                    <p>Uma plataforma gratuita para jovens negros, indígenas e de baixa renda acessarem educação tecnológica de qualidade.</p>
+                    <button onclick="showSection('cursos')" class="btn-primary">Começar agora</button>
+                </div>
+
+                <div class="features">
+                    <h3>O que oferecemos</h3>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h4>Cursos Gratuitos</h4>
+                            <p>Acesso a conteúdos introdutórios de tecnologia, com certificação ao concluir cada trilha de aprendizado.</p>
+                            <button onclick="showSection('cursos')" class="btn-secondary">Ver cursos</button>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Fórum Comunitário</h4>
+                            <p>Espaço para interação, resolução de dúvidas e compartilhamento de experiências com outros estudantes.</p>
+                            <button onclick="showSection('forum')" class="btn-secondary">Acessar fórum</button>
+                        </div>
+                        <div class="feature-card">
+                            <h4>Janela de Oportunidades</h4>
+                            <p>Vagas de estágio, júnior, pleno e sênior disponíveis no mercado de tecnologia.</p>
+                            <button onclick="showSection('vagas')" class="btn-secondary">Ver vagas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <h3>Por que é importante</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">3%</span>
+                            <p>das mulheres negras atuam na área de tecnologia no Brasil</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5%</span>
+                            <p>é a representatividade negra nos cargos técnicos das maiores empresas</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">43%</span>
+                            <p>dos estudantes indígenas têm internet e computador para estudar em casa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Cursos -->
+        <section id="cursos" class="section">
+            <div class="container">
+                <h2>Cursos Gratuitos</h2>
+                
+                <div class="filters">
+                    <input type="text" id="course-search" placeholder="Buscar cursos..." onkeyup="filterCourses()">
+                    <select id="course-level" onchange="filterCourses()">
+                        <option value="">Todos os níveis</option>
+                        <option value="Iniciante">Iniciante</option>
+                        <option value="Intermediário">Intermediário</option>
+                        <option value="Avançado">Avançado</option>
+                    </select>
+                </div>
+
+                <div id="courses-container" class="courses-grid">
+                    <!-- Cursos serão carregados aqui via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Fórum -->
+        <section id="forum" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Fórum Comunitário</h2>
+                    <button class="btn-primary">Novo Tópico</button>
+                </div>
+                
+                <div class="filters">
+                    <input type="text" id="forum-search" placeholder="Buscar no fórum..." onkeyup="filterForumTopics()">
+                    <select id="forum-sort" onchange="sortForumTopics()">
+                        <option value="recent">Mais recentes</option>
+                        <option value="popular">Mais populares</option>
+                        <option value="replies">Mais respostas</option>
+                    </select>
+                </div>
+
+                <div id="forum-container" class="forum-topics">
+                    <!-- Tópicos do fórum serão carregados aqui via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Vagas -->
+        <section id="vagas" class="section">
+            <div class="container">
+                <h2>Janela de Oportunidades</h2>
+                
+                <div class="filters">
+                    <input type="text" id="job-search" placeholder="Buscar vagas..." onkeyup="filterJobs()">
+                    <select id="job-level" onchange="filterJobs()">
+                        <option value="">Todos os níveis</option>
+                        <option value="Estágio">Estágio</option>
+                        <option value="Júnior">Júnior</option>
+                        <option value="Pleno">Pleno</option>
+                        <option value="Sênior">Sênior</option>
+                    </select>
+                    <select id="job-location" onchange="filterJobs()">
+                        <option value="">Todas as localidades</option>
+                        <option value="Remoto">Remoto</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+
+                <div id="jobs-container" class="jobs-list">
+                    <!-- Vagas serão carregadas aqui via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre o REPROGRAMA</h2>
+                
+                <div class="about-content">
+                    <div class="about-section">
+                        <h3>Nossa Missão</h3>
+                        <p>O REPROGRAMA é uma iniciativa que visa democratizar o acesso à educação tecnológica, focando especialmente em jovens negros, indígenas e de baixa renda, entre 15 e 29 anos, que não foram contemplados pelo processo de inclusão tecnológica.</p>
+                        <p>Nossa missão é reduzir as desigualdades no mercado de trabalho tecnológico, proporcionando ferramentas educacionais acessíveis e gratuitas que permitam o desenvolvimento de habilidades técnicas e a inserção no mercado de trabalho digital.</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h3>O Problema</h3>
+                        <p>A informação tem se mostrado cada vez mais um privilégio, especialmente a partir do momento em que o uso das inteligências artificiais se posicionou como parte integrante das decisões de contratação, produtividade e crescimento profissional em inúmeras áreas.</p>
+                        <p>No entanto, o acesso às ferramentas formativas que possibilitam dominar essas tecnologias ainda está restrito a grupos com maior capital econômico e cultural.</p>
+                    </div>
+                    
+                    <div class="about-section">
+                        <h3>Nossa Solução</h3>
+                        <p>O REPROGRAMA é um aplicativo gratuito que oferece três principais recursos:</p>
+                        <ol>
+                            <li><strong>Cursos e Conteúdos:</strong> Acesso gratuito a cursos e conteúdos de tecnologia, filtrados por nível de conhecimento e com certificação que reconheça os méritos pela conclusão de cada trilha de aprendizado.</li>
+                            <li><strong>Janela de Oportunidades:</strong> Utilizando bancos de dados disponíveis online para a disposição de vagas de estágio, júnior, pleno e sênior.</li>
+                            <li><strong>Fórum de Interação:</strong> Espaço para resolução de dúvidas e compartilhamento de experiências entre os usuários.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 REPROGRAMA - Inclusão Digital e Tecnológica</p>
+            <p>Desenvolvido como parte do projeto de Interculturalidade e Relações Étnico-Raciais</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

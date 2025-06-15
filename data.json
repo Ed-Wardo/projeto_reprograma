@@ -1,0 +1,157 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introdução à Programação",
+      "description": "Aprenda os conceitos básicos de programação e lógica.",
+      "level": "Iniciante",
+      "duration": "10 horas",
+      "image": "Programação"
+    },
+    {
+      "id": 2,
+      "title": "HTML e CSS para Iniciantes",
+      "description": "Crie suas primeiras páginas web com HTML e CSS.",
+      "level": "Iniciante",
+      "duration": "8 horas",
+      "image": "HTML CSS"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Básico",
+      "description": "Aprenda a linguagem de programação mais usada na web.",
+      "level": "Intermediário",
+      "duration": "12 horas",
+      "image": "JavaScript"
+    },
+    {
+      "id": 4,
+      "title": "Introdução ao Git e GitHub",
+      "description": "Aprenda a versionar seu código e colaborar em projetos.",
+      "level": "Iniciante",
+      "duration": "6 horas",
+      "image": "Git"
+    },
+    {
+      "id": 5,
+      "title": "Banco de Dados SQL",
+      "description": "Aprenda a criar e manipular bancos de dados relacionais.",
+      "level": "Intermediário",
+      "duration": "10 horas",
+      "image": "SQL"
+    },
+    {
+      "id": 6,
+      "title": "Python para Iniciantes",
+      "description": "Aprenda a programar com Python, uma linguagem versátil e poderosa.",
+      "level": "Iniciante",
+      "duration": "15 horas",
+      "image": "Python"
+    }
+  ],
+  "forumTopics": [
+    {
+      "id": 1,
+      "title": "Como começar a aprender programação?",
+      "author": "Maria Silva",
+      "date": "2025-06-01",
+      "replies": 12,
+      "views": 145,
+      "content": "Olá pessoal! Sou nova na área de tecnologia e gostaria de saber por onde começar a aprender programação. Quais linguagens são mais amigáveis para iniciantes?"
+    },
+    {
+      "id": 2,
+      "title": "Dúvida sobre HTML e CSS",
+      "author": "João Santos",
+      "date": "2025-06-03",
+      "replies": 8,
+      "views": 97,
+      "content": "Estou tendo dificuldades para entender como funciona o posicionamento de elementos com CSS. Alguém poderia me ajudar?"
+    },
+    {
+      "id": 3,
+      "title": "Vagas para estágio em desenvolvimento web",
+      "author": "Ana Oliveira",
+      "date": "2025-06-04",
+      "replies": 5,
+      "views": 210,
+      "content": "Pessoal, alguém sabe de empresas que estão contratando estagiários para desenvolvimento web? Estou procurando oportunidades."
+    },
+    {
+      "id": 4,
+      "title": "Dicas para entrevistas técnicas",
+      "author": "Carlos Mendes",
+      "date": "2025-06-05",
+      "replies": 15,
+      "views": 320,
+      "content": "Tenho uma entrevista técnica para desenvolvedor júnior na próxima semana. Alguém tem dicas de como se preparar?"
+    },
+    {
+      "id": 5,
+      "title": "Recomendações de cursos de Python",
+      "author": "Fernanda Lima",
+      "date": "2025-06-06",
+      "replies": 7,
+      "views": 89,
+      "content": "Estou querendo aprender Python. Alguém tem recomendações de bons cursos gratuitos ou de baixo custo?"
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Desenvolvedor Frontend Júnior",
+      "company": "TechSolutions",
+      "location": "São Paulo, SP",
+      "salary": "R$ 3.500 - R$ 4.500",
+      "type": "CLT",
+      "level": "Júnior",
+      "date": "2025-06-01",
+      "description": "Buscamos um desenvolvedor frontend júnior para trabalhar com React, HTML, CSS e JavaScript."
+    },
+    {
+      "id": 2,
+      "title": "Estágio em Desenvolvimento Web",
+      "company": "Inovação Digital",
+      "location": "Remoto",
+      "salary": "R$ 1.800",
+      "type": "Estágio",
+      "level": "Estágio",
+      "date": "2025-06-03",
+      "description": "Oportunidade para estudantes de tecnologia que desejam iniciar na área de desenvolvimento web."
+    },
+    {
+      "id": 3,
+      "title": "Desenvolvedor Backend Python",
+      "company": "DataTech",
+      "location": "Rio de Janeiro, RJ",
+      "salary": "R$ 6.000 - R$ 8.000",
+      "type": "CLT",
+      "level": "Pleno",
+      "date": "2025-06-04",
+      "description": "Vaga para desenvolvedor backend com experiência em Python, Django e bancos de dados SQL."
+    },
+    {
+      "id": 4,
+      "title": "Analista de Dados",
+      "company": "Analytics Co.",
+      "location": "Belo Horizonte, MG",
+      "salary": "R$ 5.000 - R$ 7.000",
+      "type": "CLT",
+      "level": "Júnior",
+      "date": "2025-06-05",
+      "description": "Buscamos profissional para análise de dados, com conhecimentos em SQL, Python e ferramentas de visualização."
+    },
+    {
+      "id": 5,
+      "title": "Desenvolvedor Full Stack",
+      "company": "WebSystems",
+      "location": "Remoto",
+      "salary": "R$ 8.000 - R$ 12.000",
+      "type": "PJ",
+      "level": "Sênior",
+      "date": "2025-06-06",
+      "description": "Vaga para desenvolvedor full stack com experiência em React, Node.js e bancos de dados NoSQL."
+    }
+  ]
+}
+
